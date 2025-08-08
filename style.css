@@ -1,0 +1,93 @@
+/* General Body Styles */
+body {
+    background-color: #121212; /* Dark Gray/Black */
+    color: #FFFFFF; /* White */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #AAAAAA; /* Lighter Gray */
+}
+
+/* Main Content */
+main {
+    padding: 80px 20px 20px; /* Adjust top padding to account for fixed header */
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #333;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #1a1a1a;
+    border-top: 1px solid #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    main {
+        padding-top: 120px; /* Adjust for smaller screens if nav wraps */
+    }
+}
