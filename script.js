@@ -29,16 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typing effect for main title
     const typingTarget = document.querySelector('.typing-effect');
-    const text = "안녕하세요, 승식입니다."; // Change this text to your preference
+    const text = "끊임없이 도전하는 개발자, 승식입니다."; // Change this text to your preference
     let i = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
 
-    function typing() {
+    function type() {
+        typingTarget.innerHTML = text.substring(0, i);
+
         if (i < text.length) {
-            typingTarget.innerHTML += text.charAt(i);
             i++;
-            setTimeout(typing, 100);
+            setTimeout(type, typingSpeed);
         }
     }
 
-    typing();
+    type();
 });
