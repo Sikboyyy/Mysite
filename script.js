@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typing effect for main title
     const typingTarget = document.querySelector('.typing-effect');
-    const text = "끊임없이 도전하는 개발자, 승식입니다."; // Change this text to your preference
+    const text = "끊임없이 도전하는 개발자, 김승식입니다."; // Change this text to your preference
     let i = 0;
     let isDeleting = false;
     let typingSpeed = 100;
